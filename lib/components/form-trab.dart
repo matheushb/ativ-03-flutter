@@ -20,7 +20,6 @@ class _FormTrabState extends State<FormTrab> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Formulário
             Form(
               key: _formKey,
               child: Column(
@@ -56,7 +55,7 @@ class _FormTrabState extends State<FormTrab> {
                       controller.clear();
                       controller1.clear();
                       controller2.clear();
-                      print(db); // Apenas para depuração
+                      print(db);
                     },
                     child: const Text('ME PRESSIONA'),
                   ),
@@ -64,7 +63,6 @@ class _FormTrabState extends State<FormTrab> {
               ),
             ),
             const SizedBox(height: 16),
-            // Lista de itens
             Expanded(
               child: ListView.builder(
                 padding: const EdgeInsets.all(8),
